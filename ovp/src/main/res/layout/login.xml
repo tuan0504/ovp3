@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/bg"
+     android:orientation="vertical" >
+
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+  <RelativeLayout
+      android:id="@+id/relativelayout2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true" >
+
+            <EditText
+                android:id="@+id/channel_no_input_field"
+                android:layout_width="80dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="700dp"
+                android:layout_marginRight="80dp"
+                android:layout_weight="0.99"
+                android:background="#88ffffff"
+                android:ems="10"
+                android:fitsSystemWindows="false"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="#ffffff00"
+                android:textSize="30dp" />
+</RelativeLayout>
+ 
+ 
+        </LinearLayout>
+        
+<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/seatLegendLayout">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_gridtableLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/categoryview"
+                        android:layout_width="300dp"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:columnWidth="100dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="1dp"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="horizontal"
+                        android:stretchMode="none"
+                        android:verticalSpacing="1dp">
+
+                    </GridView>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>w>
+         
+	      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+	 <GridView
+	     android:id="@+id/gridview"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:columnWidth="70dp"
+	     android:gravity="center"
+	     android:horizontalSpacing="10dp"
+	     android:numColumns="auto_fit"
+	     android:stretchMode="columnWidth"
+	     android:verticalSpacing="10dp" />
+
+       </LinearLayout>
+  
+
+</LinearLayout>

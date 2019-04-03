@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+ 	    <ListView
+ 	        android:id="@+id/video_menu_list"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent"
+ 	        android:background="#ff000000" >
+
+  	    </ListView>
+
+ 
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekbar"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="36dp"
+        android:background="#88000000"
+        android:text="TextView"
+        android:textColor="#ffffff00" />
+   <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:layout_alignParentLeft="true"
+        android:background="#88000000"
+        android:text="TextView"
+        android:textColor="#ffffff00" />
+
+   <SeekBar
+       android:id="@+id/seekbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginBottom="29dp"
+       android:background="#88000000"
+       android:paddingLeft="50dp"
+       android:paddingRight="50dp" />
+
+
+    
+</RelativeLayout>
